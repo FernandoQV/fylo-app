@@ -1,0 +1,30 @@
+.testimonials{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    gap: 2rem;
+    background-color: getColor('Bg2');
+    padding: 2rem 3rem 6rem;
+    .card-testimonial{
+        @include flex(center,flex-start,2rem,column);
+        background-color: getColor('Bg1');
+        padding: 1.5rem;
+        border-radius: 10px;
+        &__testimonial{
+            @include font(.8rem,400,'gray1',left);
+        }
+        &__info{
+            @include flex();
+
+            &__img{
+                height: 50px;
+                border-radius: 50%;
+            }
+            &__nombre{
+                @include font(1.1rem,700,'white1',left);
+            }
+            &__cargo{
+                @include font(.8rem,400,'gray1',left);
+            }
+        }
+    }
+}
