@@ -1,0 +1,38 @@
+.stay{
+    border: none;
+    @include flex();
+    gap: 2rem;
+    flex-wrap: wrap;
+    padding: 0 1.5rem 5rem;
+    background-color: getColor('Bg2');
+    &__img{
+        max-width: 350px;
+    }
+    &__info{
+        margin-top: 1.5rem;
+        @include flex();
+        flex-direction: column;
+        align-items: flex-start;
+        &__title{
+            @include font(1.4rem,700,'white1');
+        }
+        &__paragraph{
+            @include font(1rem,400,'gray1',left);
+        }
+        &__link{
+            @include font(1.2rem,700,'cyan1',left);
+            position: relative;
+            &::before{
+                content: '';
+                display: block;
+                width: 100%;
+                height: 2px;
+                border-radius: 2px;
+                background-color: getColor('cyan1');
+                position: absolute;
+                top: 130%;
+            }
+        }
+    }
+
+}
