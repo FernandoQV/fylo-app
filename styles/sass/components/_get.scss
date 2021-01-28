@@ -1,0 +1,29 @@
+.get{
+    @include flex();
+    flex-direction: column;
+    background-color: getColor('Bg1');
+    max-width: 600px;
+    margin: 0 1rem;
+    padding: 3rem 2rem;
+    position: relative;
+    top: 0;
+    transform: translateY(-50%);
+    border-radius: 10px;
+   &__title{
+        @include font(1.5rem,700,'white1');
+    }
+   &__paragraph{
+        @include font(1rem,400,'gray1');
+    }
+    &__btn{
+        width: 100%;
+    }
+}
+.text{
+    height: 32px;
+    width: 100%;
+    margin: 1rem 0 2rem;
+    padding: 1.5rem;
+    @include font(1.1rem,400,'gray1',left);
+    border-radius: 32px;
+}
