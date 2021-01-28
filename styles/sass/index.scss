@@ -1,0 +1,18 @@
+/* estilos globales */
+@import './globales/global';
+
+/* variables */
+@import './assets/variables/colors';
+
+/* fuctions */
+@import './assets/functions/getColor';
+
+/* mixins */
+@import './assets/mixins/flex',
+        './assets/mixins/font';
+
+/* componenets */
+@import './components/nav',
+        './components/header',
+        './components/button',
+        './components/features';

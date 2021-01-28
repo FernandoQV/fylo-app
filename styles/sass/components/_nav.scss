@@ -1,0 +1,17 @@
+.nav{
+ @include flex(space-between);
+ background-color: getColor('Bg1');
+ padding: 2rem 1.5rem;
+ height: 60px;
+ &__logo{
+     max-width: 60px;
+     object-fit: cover;
+ };
+ &__menu{
+     @include flex(space-between,center,1.5rem);
+     .link{
+        @include font(1.1rem,400,'gray1');
+        color: getColor('red');
+     }   
+ }
+}

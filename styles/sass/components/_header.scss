@@ -1,0 +1,38 @@
+.header{
+    background-color: getColor('Bg1');
+    padding: 3rem 0 0;
+    @include flex(center,center,3rem,column);
+    max-width: 700px;
+    &__img{
+        max-width: 85%;
+        position: relative;
+        z-index: 50;
+    }
+    &__info{
+        margin-top: 6rem;
+        padding-bottom: 3rem;
+        background-color: getColor('Bg2');
+        @include flex(center,center,0,column);
+        position: relative;
+        z-index: 45;
+        .title{
+            @include font(1.8rem,700,'white1');
+            margin-top: -3rem;
+            margin-bottom: 1.5rem;
+            padding: 0 1.5rem;
+        }
+        .paragraph{
+            @include font(1rem,400,'gray1');
+            padding: 0 2.5rem;
+            margin-bottom: 2rem;
+        }
+        &::before{
+            content: url('/images/bg-curvy-mobile.svg');
+            display: block;
+            position: absolute;
+            top: -141px;
+            z-index: -1;
+        }
+    }
+ 
+}
